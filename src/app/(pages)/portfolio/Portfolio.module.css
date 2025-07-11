@@ -1,0 +1,80 @@
+.portfolio-section{
+    padding: 0px 100px 120px;
+}
+.client-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: auto;
+  gap: 20px;
+  background: rgb(245, 245, 245);
+  border-radius: 20px;
+  padding: 60px;
+}
+
+.client-card {
+  width: 100%;
+  background-color: white;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.client-image-wrapper {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+}
+
+.client-img {
+  display: block;
+  width: 100%;
+  /* height: 150px; */
+  transition: all 0.3s ease;
+}
+
+.client-img:hover {
+  transform: scale(1.1);
+}
+
+/* Arrow icon positioned top-right over image */
+.client-card-arrow-section {
+  position: absolute;
+  top: 20px;
+  /* spacing from top */
+  right: 20px;
+  /* spacing from right */
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.4s ease, color 0.3s ease;
+}
+
+.client-card-arrow-section i {
+  color: black;
+  transition: color 0.4s ease;
+}
+
+.client-card-arrow-section:hover {
+  background-color: black;
+}
+
+.client-card-arrow-section:hover i {
+  color: white;
+}
+
+@media (max-width:600px) {
+  .portfolio-section{
+    padding: 20px;
+  }
+  .client-section{
+    padding: 20px;
+  }
+}
+
+@media (min-width:601px) and (max-width:900px) {}
